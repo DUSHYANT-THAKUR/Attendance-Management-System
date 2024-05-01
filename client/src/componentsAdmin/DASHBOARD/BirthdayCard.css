@@ -1,0 +1,94 @@
+
+
+.card-5 {
+  box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
+}
+
+.cardTitle{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.3rem;
+      font-weight:'bolder';
+      color:rgb(73, 167, 151);
+      font-weight: bolder;
+      text-align: center;
+}
+
+.myCard{
+  /* width: 280px; */
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: black;
+  background: snow;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  font-weight: bolder;
+  color: grey;
+}
+
+.status{
+  font-size: 0.6rem;
+}
+
+/* TodayAllEmployeePresentABSET  cSS */
+
+.backlogCard {
+  height: 40vh;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.backlogTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.viewDetails {
+  font-size: 14px;
+  color: blue;
+  cursor: pointer;
+}
+
+.dataTable {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+.avatarCell {
+  width: 60px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.designation {
+  color: #666;
+}

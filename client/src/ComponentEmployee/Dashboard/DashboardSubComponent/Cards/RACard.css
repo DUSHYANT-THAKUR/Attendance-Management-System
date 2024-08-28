@@ -1,0 +1,30 @@
+.ra-card{
+    border:none;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 300px;
+    margin: 20px;
+  }
+  
+ 
+  
+  #ra-title {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  
+  #ra-para{
+    font-size: 12px;
+    margin: 0;
+    color: #666;
+  }
+  
+/* 
+  @media (max-width: 576px) {
+    .ra-card{
+        margin-left: 90px;
+    }
+
+} */

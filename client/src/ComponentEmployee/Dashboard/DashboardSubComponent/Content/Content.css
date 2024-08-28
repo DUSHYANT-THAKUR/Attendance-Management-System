@@ -1,0 +1,85 @@
+.sub-container{
+    border: 1px solid lightgrey;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(251, 248, 248);
+}
+.sub-container1{
+    border: 1px solid lightgrey;
+    padding: 20px;
+    border-radius: 10px;
+}
+.main-heading{
+    font-weight: 700;
+}
+.new-announcement{
+    font-size: 15px;
+}
+.main-para{
+    font-size: 14px;
+    font-weight: 500;
+}
+.main-para span{
+    font-weight: 800;
+    color:#14b33f;
+}
+.tbl-button{
+   border-radius: 5px ;
+   padding: 0px 6px 0 6px;
+   font-size: 13px;
+   border: none;
+}
+.border-bottom-blue{
+    border-bottom: 3px solid blue;
+}
+ .subnavbar{
+    border: 1px solid lightgrey;
+    margin-top: 10px;
+    border-radius: 10px;
+ }
+ .res-heading{
+    font-weight: 600;
+    font-size: 16px;
+ }
+ .total-card{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+ }
+ .today-card{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+ }
+ .commissions-heading{
+    font-weight: 600;
+    font-size: 14px;
+ }
+ .commissions-card p{
+    font-weight: 600;
+ }
+
+ .navbar-toggler {
+    border:1px solid black;
+}
+.custom-button {
+    width: 100px;  /* Set the desired width */
+    height: 40px;  /* Set the desired height */
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px; /* Adjust based on button height for centering text */
+  }
+
+
+  .inputField {
+    background: #ffffff;
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    text-align: left;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+
+  
+

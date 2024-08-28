@@ -1,0 +1,6 @@
+.notification-container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    position: relative;
+}

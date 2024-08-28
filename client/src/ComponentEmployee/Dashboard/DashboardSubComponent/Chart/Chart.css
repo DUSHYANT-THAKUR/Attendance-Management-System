@@ -1,0 +1,65 @@
+
+  .summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .summary > div {
+    background: #F9F9F9;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    margin-right: 10px;
+  }
+  .summary > div:last-child {
+    margin-right: 0;
+  }
+  .total-commissions h3, .todays-commissions h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+  }
+  .total-commissions p, .todays-commissions p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .change {
+    display: block;
+    margin-top: 10px;
+  }
+  .positive {
+    color: green;
+  }
+  .negative {
+    color: red;
+  }
+  .custom-tooltip {
+    background: white;
+    border: 1px solid #ccc;
+    /* padding: 10px; */
+    border-radius: 5px;
+  }
+  .custom-tooltip .label {
+    font-weight: bold;
+  }
+  .buttons {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px;
+    margin-right: 2%;
+  }
+  .buttons button {
+    background: #fff;
+    border: 1px solid #8884D8;
+    color: #8884D8;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  .buttons button:hover {
+    background: #8884D8;
+    color: #fff;
+  }

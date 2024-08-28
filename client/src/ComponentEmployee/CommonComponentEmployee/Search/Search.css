@@ -1,0 +1,36 @@
+/* Search.css */
+
+.search-container {
+    background-color: #f8f9fa; /* Light background color for the container */
+    padding: 20px 30px; /* Padding around the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .search-input-group {
+    position: relative; /* Needed to position the icon inside the input */
+    display: flex; /* Align items horizontally */
+  }
+  
+  .search-input {
+    border-radius: 20px; /* Rounded corners */
+    border: 1px solid #ced4da; /* Border color */
+    padding: 10px 15px; /* Padding inside the input */
+    font-size: 16px; /* Font size */
+    padding-right: 40px; /* Make space for the icon */
+    background-color: #e4e4ff; /* Background color */
+  }
+  
+  .search-icon {
+    position: absolute; /* Position the icon absolutely */
+    right: 15px; /* Distance from the right edge of the input */
+    top: 50%; /* Center the icon vertically */
+    transform: translateY(-50%); /* Adjust the icon position */
+    color: #6c757d; /* Icon color */
+    font-size: 20px; /* Icon size */
+    pointer-events: none; /* Prevent icon from interfering with input */
+  }
+  
+  .btn-primary {
+    border-radius: 20px; /* Rounded corners for the button */
+  }
+  

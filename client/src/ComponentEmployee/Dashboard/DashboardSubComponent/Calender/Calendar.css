@@ -1,0 +1,209 @@
+.calendar {
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+.calendar-outer {
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 25px;
+}
+.calendar-outer h5 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.header {
+  padding: 10px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #eaeaea;
+}
+.current-day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+.current-day span {
+  font-size: 1.2em;
+}
+.edit-icon {
+  cursor: pointer;
+  font-size: 1.2em;
+}
+.month-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.month-year {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 600;
+  color: grey;
+}
+.year-selector {
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.year-dropdown {
+  position: absolute;
+  background: white;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 5px;
+  z-index: 10;
+}
+.year-option {
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+.year-option:hover {
+  background: #f0f0f0;
+}
+.icon {
+  cursor: pointer;
+  font-size: 1.5em;
+  user-select: none;
+}
+.days {
+  display: flex;
+  background: #f7f7f7;
+  padding: 10px 0;
+}
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.col-center {
+  text-align: center;
+  color: #333;
+}
+.row {
+  display: flex;
+}
+.cell {
+  flex: 1;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+.cell:last-child {
+  border-right: none;
+}
+.cell:hover {
+  background: #f0f0f0;
+}
+.cell.disabled {
+  background: #eaeaea;
+  color: #999;
+}
+.cell.current-date {
+  background: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cell.selected {
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cell .number {
+  font-size: 1em;
+}
+.body {
+  padding: 20px;
+}
+.name {
+  font-size: 15px;
+  font-weight: 600;
+}
+.month-time {
+  font-size: 12px;
+  color: grey;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .calendar-outer {
+    padding: 15px;
+  }
+  .current-day {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+  }
+  .current-day span {
+    font-size: 1em;
+  }
+  .month-selector {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .month-year {
+    font-size: 0.9em;
+  }
+  .icon {
+    font-size: 1.2em;
+  }
+  .days {
+    padding: 5px 0;
+  }
+  .cell {
+    height: 40px;
+  }
+  .cell.current-date,
+  .cell.selected {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-outer {
+    padding: 10px;
+  }
+  .current-day {
+    font-size: 18px;
+  }
+  .month-year {
+    font-size: 0.8em;
+  }
+  .icon {
+    font-size: 1em;
+  }
+  .days {
+    padding: 2px 0;
+  }
+  .cell {
+    height: 35px;
+  }
+  .cell.current-date,
+  .cell.selected {
+    width: 30px;
+    height: 30px;
+  }
+}

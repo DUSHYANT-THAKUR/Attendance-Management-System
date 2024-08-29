@@ -79,7 +79,7 @@ const Sidebar = () => {
         {
             title:'Change Password',
             icon:<HelpCenterIcon/>,
-            link:'/bankconnect/employee/ChangePassword'
+            link:'https://dushyant-prashun-thakur.netlify.app/bankconnect/employee/ChangePassword'
         },
         {
             title:'LogOut',

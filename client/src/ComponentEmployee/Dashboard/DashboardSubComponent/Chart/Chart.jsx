@@ -3,10 +3,7 @@ import {
   Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   AreaChart
 } from 'recharts';
-import axios from 'axios';
-import baseUrl from '../../../config/baseUrl';
 import './Chart.css';
-
 // Custom tooltip component
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
@@ -19,46 +16,45 @@ const CustomTooltip = ({ active, payload, label }) => {
   }
   return null;
 };
-const Chart = ({ totalCommissions, setTotalCommissions,todayCommission,setTodayCommission }) => {
+const Chart = ({ totalCommissions, setTotalCommissions, todayCommission, setTodayCommission }) => {
   const [selectedView, setSelectedView] = useState('weekly');
   const [data, setData] = useState({});
-  const auth = localStorage.getItem('user');
-  const fetchData = async () => {
-    try {
-      const config = {
-        headers: {
-          'Content-type': 'application/json',
-          Accept: 'application/json',
-          Authorization: `Bearer ${auth}`,
-        },
-      };
-      // const result = await axios.post(`${baseUrl}/commissionCalculation`, {}, config);
-      // const apiData = result.data.result;
-      // console.log(apiData);
-      // let todayData = !apiData.todays ? 0 : apiData.todays;
-      // setTodayCommission(todayData);
-      // const formattedData = {
-      //   weekly: apiData.weekly.map(item => ({
-      //     name: item.day,
-      //     revenue: parseFloat(item.commission),
-      //   })),
-      //   monthly: apiData.monthly.map(item => ({
-      //     name: item.month, 
-      //     revenue: parseFloat(item.commission),
-      //   })),
-      //   yearly: apiData.yearly.map(item => ({
-      //     name: item.year,
-      //     revenue: parseFloat(item.commission),
-      //   })),
-      // };
-      // setData(formattedData);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
+  // Setting static data
   useEffect(() => {
-     fetchData();
-  }, []);
+    const staticData = {
+      weekly: [
+        { name: 'Monday', revenue: 1200 },
+        { name: 'Tuesday', revenue: 2100 },
+        { name: 'Wednesday', revenue: 800 },
+        { name: 'Thursday', revenue: 1600 },
+        { name: 'Friday', revenue: 900 },
+        { name: 'Saturday', revenue: 3000 },
+        { name: 'Sunday', revenue: 1500 },
+      ],
+      monthly: [
+        { name: 'January', revenue: 10000 },
+        { name: 'February', revenue: 8500 },
+        { name: 'March', revenue: 12000 },
+        { name: 'April', revenue: 7500 },
+        { name: 'May', revenue: 9500 },
+        { name: 'June', revenue: 8000 },
+        { name: 'July', revenue: 11000 },
+        { name: 'August', revenue: 9000 },
+        { name: 'September', revenue: 10500 },
+        { name: 'October', revenue: 11500 },
+        { name: 'November', revenue: 9500 },
+        { name: 'December', revenue: 13000 },
+      ],
+      yearly: [
+        { name: '2021', revenue: 95000 },
+        { name: '2022', revenue: 120000 },
+        { name: '2023', revenue: 110000 },
+        { name: '2024', revenue: 140000 },
+      ],
+    };
+    setData(staticData);
+    setTodayCommission(staticData.weekly[0].revenue); // Example: setting today's commission
+  }, [setTodayCommission]);
   useEffect(() => {
     if (data[selectedView]) {
       const totalRevenue = data[selectedView].reduce((acc, cur) => acc + cur.revenue, 0);
@@ -101,3 +97,10 @@ const Chart = ({ totalCommissions, setTotalCommissions,todayCommission,setTodayC
   );
 };
 export default Chart;
+
+
+
+
+
+
+

@@ -67,11 +67,11 @@ function Routers() {
             <Header />
             <Routes>
               <Route path="/bankconnect/employee/dashboard" element={<Dashboard />} />
-              <Route path="/bankconnect/employee/notifications" element={<Notifications />} />
-              <Route path="/bankconnect/employee/Attendance" element={<Attendance />} />
-              <Route path="/bankconnect/employee/Performanaces" element={<Performanaces />} />
+              <Route path="https://dushyant-prashun-thakurs.netlify.app/bankconnect/employee/notifications" element={<Notifications />} />
+              <Route path="https://dushyant-prashun-thakurs.netlify.app/bankconnect/employee/Attendance" element={<Attendance />} />
+              <Route path="https://dushyant-prashun-thakurs.netlify.app/bankconnect/employee/Performanaces" element={<Performanaces />} />
               <Route path="/bankconnect/employee/my-calender" element={<MyCalendar />} />
-              <Route path="/bankconnect/employee/ChangePassword" element={<ChangePassword />} />
+              <Route path="https://dushyant-prashun-thakurs.netlify.app/bankconnect/employee/ChangePassword" element={<ChangePassword />} />
               <Route path="/bankconnect/employee/Employee" element={<Employee />} />
               <Route path="/bankconnect/employee/login-employee" element={<Login />} />
           <Route path="/" element={<Navigate to="/bankconnect/employee/login-employee" />} />

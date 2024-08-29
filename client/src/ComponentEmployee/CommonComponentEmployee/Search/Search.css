@@ -30,7 +30,5 @@
     pointer-events: none; /* Prevent icon from interfering with input */
   }
   
-  .btn-primary {
-    border-radius: 20px; /* Rounded corners for the button */
-  }
+
   
